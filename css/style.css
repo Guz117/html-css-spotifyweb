@@ -11,3 +11,25 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+} 
+
+.nav-left {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: blueviolet;
+}
+
+
+.header {
+    float: left;
+    height: 60px;
+    width: calc(100% - 60px);
+    background-color: aqua;
+}
