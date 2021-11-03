@@ -6,10 +6,8 @@
 
 html {
     font-size: 100%;
-    font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .flex {
@@ -37,12 +35,12 @@ li {
 .nav-left {
     float: left;
     width: 200px;
-    height: calc(100vh - 70px); 
-    background-color: rgba(137, 43, 226, 0.164);
+    height: calc(100vh - 70px);
+    background-color: #000000;
 }
 
 .spotify-img {
-    background: lightcoral;
+    background: #000000;
     width: 100%;
 }
 
@@ -52,24 +50,87 @@ li {
 }
 
 .menu {
-    padding-left: 0.5em;
     align-items: center;
     color: #a3a3a3;
-    padding: 0.5em 0;
+    padding: 0.5em 1em;
     font-size: 0.8em;
+    font-weight: 600;
 }
 
 .menu svg{
-    width: 12%;
+    padding-right: 0.5em;
+    width: 15%;
     fill: #a3a3a3;
 }
 
 .menu:hover{
-    border-left-color: 1px solid #adff2f;
     color: white;
-    fill: white;
+    border-left: 1px solid #adff2f;
 }
 
+.playlist {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: white;
+    padding-left: 1em;
+    overflow: auto;
+}
+
+.ul-playlist {
+    margin-top: 1em;
+}
+
+.ul-playlist li {
+    color: #a3a3a3;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+.plus {
+    align-items: center;
+}
+
+.fa-plus-square {
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.instal {
+   flex-direction: column;
+   align-content: flex-end;
+}
+
+.download {
+    align-items: center;
+    color: #a3a3a3;
+    padding: 0.5em 1em;
+    margin: 0 0.7em;
+    font-size: 0.8em;
+    font-weight: 600;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.download svg {
+    padding-right: 0.5em;
+    width: 15%;
+    fill: #a3a3a3;
+}
+
+.john {
+    align-items: center;
+    color: #a3a3a3;
+    padding: 0.5em 1em;
+    margin: 0 0.7em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.john svg {
+    padding-right: 0.5em;
+    width: 15%;
+    fill: white;
+}
+ 
 
 /* /nav laterale */
 
