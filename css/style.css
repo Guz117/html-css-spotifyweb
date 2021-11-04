@@ -42,23 +42,22 @@ main {
     width: 230px;
     height: 100%;
     min-height: 480px;
-    background: lightblue;
+    background: #000000;
 }
 
 .nav-top {
     width: 100%;
     height: calc(100% - 100px);
-    background-color: darkgoldenrod;
 } 
 
 .nav-bottom {
     width: 100%;
     height: 100px;
-    background: darkorange;
 }
 
 .spotify-img {
     width: 100%;
+    height: 80px;
 }
 
 .logo-spotify-display {
@@ -68,6 +67,10 @@ main {
 
 .logo-spotify-none {
     display: none;
+}
+
+.ul-menu {
+    height: 150px;
 }
 
 .menu {
@@ -93,17 +96,23 @@ main {
     border-left: 1px solid #adff2f;
 }
 
+.ul-playlist {
+    height: 90%;
+    overflow: auto;
+}
+
 .playlist {
-    height: 400px;
+    height: calc(100% - 300px);
     margin-top: 1em;
     font-size: 0.8em;
     color: white;
     padding-left: 1em;
-    overflow: auto;
 }
+
 
 .ul-playlist {
     margin-top: 1em;
+    overflow-y: auto;
 }
 
 .ul-playlist li {
@@ -114,6 +123,7 @@ main {
 
 .plus {
     align-items: center;
+    margin-top: 0.5em;
 }
 
 .fa-plus-square {
@@ -127,7 +137,6 @@ main {
     height: 100%;
     padding-top: calc(90px - 2em);
     padding-bottom: 2em;
-    background: crimson;
     overflow: auto;
 }
 
@@ -163,9 +172,8 @@ main {
     border-bottom: 1px solid #a3a3a3;
 }
 
-.download svg {
-    padding-right: 0.5em;
-    width: 15%;
+.img-menu-bottom {
+    width: 12%;
     fill: #a3a3a3;
 }
 
@@ -178,11 +186,21 @@ main {
     font-weight: 600;
 }
 
-.john svg {
-    padding-right: 0.5em;
-    width: 15%;
+.john .img-menu-bottom {
     fill: white;
+    background: #a3a3a3;
+    border-radius: 20px;
 }
+
+.img-menu-bottom-none {
+    display: none;
+}
+
+.text-menu-bottom {
+    margin-left: 0.5em;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .main-nav {
@@ -199,13 +217,41 @@ main {
     }
     .logo-spotify-none {
         display: block;
+        width: 80%;
+        padding: 0.5em;
     }
     .img-menu {
         display: none;
     }
     .img-menu-none {
         display: block;
+        fill: white;
         width: 80%;
+    }
+    .playlist {
+        display: none;
+    }
+    .img-menu-bottom {
+        display: none;
+    }
+    .text-menu-bottom {
+        display: none;
+    }
+    .img-menu-bottom-none {
+        display: block;
+        fill: white;
+        width: 20px;
+    }
+    .download {
+        margin: 0;
+    }
+    .john {
+        margin: 0;
+    }
+    .john .img-menu-bottom-none {
+        fill: white;
+        background: #a3a3a3;
+        border-radius: 20px;
     }
 
 }
