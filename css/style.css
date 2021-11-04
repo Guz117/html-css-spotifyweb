@@ -33,7 +33,7 @@ li {
 main {
     width: 100%;
     height: calc(100% - 90px);
-    background: chartreuse;
+    background: cornflowerblue;
     overflow: hidden;
 }
 
@@ -137,7 +137,7 @@ main {
     float: left;
     width: calc(100% - 230px);
     height: 100%;
-    padding-top: calc(90px - 2em);
+    padding-top: calc(90px + 0.7em);
     padding-bottom: 2em;
     overflow: auto;
 }
@@ -181,7 +181,72 @@ main {
     margin-left: 0.5em;
 }
 
+/* main upgrade */
+.upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 230px);
+    height: 90px;
+    background-color: #080b12;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.upgrade button {
+    margin-right: 1em;
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    background: #080b12;
+    border: 1px solid white;
+    color: white;
+}
+/* main upgrade */
+
+
+
+
+
+/* /main-nav */
+
+/* albums */
+.albums-menu {
+    width: 100%;
+    background: #141922;
+    justify-content: center;
+    gap: 1em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.navigation a{
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.navigation {
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    height: 1px;
+    width: 60%;
+    background: chartreuse;
+    display: none;
+}
+
+.navigation:hover .line {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .albums-menu {
+        flex-wrap: wrap;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .main-nav {
@@ -239,34 +304,6 @@ main {
     }
     
 }
-/* /main-nav */
-
-/* main upgrade */
-.upgrade {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100% - 230px);
-    height: 90px;
-    background-color: #080b12;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.upgrade button {
-    margin-right: 1em;
-    border: none;
-    padding: 0.5em 2em;
-    border-radius: 20px;
-    background: #080b12;
-    border: 1px solid white;
-    color: white;
-}
-/* main upgrade */
-
-/* albums */
-
 
 
 
