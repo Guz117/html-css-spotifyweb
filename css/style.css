@@ -37,6 +37,8 @@ main {
     overflow: hidden;
 }
 
+
+/* main-nav */
 .main-nav {
     float: left;
     width: 230px;
@@ -140,27 +142,6 @@ main {
     overflow: auto;
 }
 
-.upgrade {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100% - 230px);
-    height: 90px;
-    background-color: #080b12;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.upgrade button {
-    margin-right: 1em;
-    border: none;
-    padding: 0.5em 2em;
-    border-radius: 20px;
-    background: #080b12;
-    border: 1px solid white;
-    color: white;
-}
 
 .download {
     align-items: center;
@@ -234,6 +215,9 @@ main {
     .img-menu-bottom {
         display: none;
     }
+    .img-menu-text {
+        display: none;
+    }
     .text-menu-bottom {
         display: none;
     }
@@ -253,164 +237,24 @@ main {
         background: #a3a3a3;
         border-radius: 20px;
     }
-
+    
 }
+/* /main-nav */
 
-footer {
-    width: 100%;
-    height: 90px;
-    background: blueviolet;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav laterale 
-.nav-left {
-    float: left;
-    width: 200px;
-    /* height: calc(100vh - 70px); 
-    background-color: #000000;
-}
-
-.spotify-img {
-    background: #000000;
-    width: 100%;
-}
-
-.spotify-img img {
-    width: 75%;
-    padding: 0.5em;
-}
-
-.menu {
-    align-items: center;
-    color: #a3a3a3;
-    padding: 0.5em 1em;
-    font-size: 0.8em;
-    font-weight: 600;
-}
-
-.menu svg{
-    padding-right: 0.5em;
-    width: 15%;
-    fill: #a3a3a3;
-}
-
-.menu:hover{
-    color: white;
-    border-left: 1px solid #adff2f;
-}
-
-.playlist {
-    height: 400px;
-    margin-top: 1em;
-    font-size: 0.8em;
-    color: white;
-    padding-left: 1em;
-    overflow: auto;
-}
-
-.ul-playlist {
-    margin-top: 1em;
-}
-
-.ul-playlist li {
-    color: #a3a3a3;
-    margin: 1em 0;
-    font-weight: 600;
-}
-
-.plus {
-    align-items: center;
-}
-
-.fa-plus-square {
-    font-size: 2em;
-    margin-right: 0.5em;
-}
-
-.instal {
-    margin-top: 200px;
-    z-index: 2;
-    flex-direction: column;
-    align-content: flex-end;
-}
-
-.download {
-    align-items: center;
-    color: #a3a3a3;
-    padding: 0.5em 1em;
-    margin: 0 0.7em;
-    font-size: 0.8em;
-    font-weight: 600;
-    border-bottom: 1px solid #a3a3a3;
-}
-
-.download svg {
-    padding-right: 0.5em;
-    width: 15%;
-    fill: #a3a3a3;
-}
-
-.john {
-    align-items: center;
-    color: #a3a3a3;
-    padding: 0.5em 1em;
-    margin: 0 0.7em;
-    font-size: 0.8em;
-    font-weight: 600;
-}
-
-.john svg {
-    padding-right: 0.5em;
-    width: 15%;
-    fill: white;
-}
-
-
-/* /nav laterale */
-
-/* header 
-.header {
-    float: left;
-    height: 60px;
-    width: calc(100% - 200px);
-    background-color: #080b12;
+/* main upgrade */
+.upgrade {
     position: fixed;
     top: 0;
     right: 0;
+    width: calc(100% - 230px);
+    height: 90px;
+    background-color: #080b12;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 9999999;
 }
 
-.header button {
+.upgrade button {
     margin-right: 1em;
     border: none;
     padding: 0.5em 2em;
@@ -419,7 +263,175 @@ footer {
     border: 1px solid white;
     color: white;
 }
-/* header */
+/* main upgrade */
+
+/* albums */
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 90px;
+    background: #282828;
+    justify-content: space-between;
+}
+
+/* song */
+.song {
+    align-items: center;
+    height: 100%;
+    margin-left: 1em;
+    justify-content: space-between;
+}
+
+
+
+.img-sinister {
+    width: 60px;
+    height: 60px;
+}
+
+.img-sinister img {
+    width: 100%;
+}
+
+.text-sinister {
+    margin: 0.7em;
+}
+
+.text-sinister {
+    flex-direction: column;
+}
+
+.title-sinister {
+    font-size: 0.8em;
+    color: white;
+    font-weight: 600;
+}
+
+.brano {
+    font-size: 0.6em;
+    color: #a3a3a3;
+    font-weight: 600;
+}
+
+.heart-folder {
+    color: #a3a3a3;
+    font-size: 1em;
+    margin-left: 2em;
+}
+
+.folder {
+    margin-left: 2em;
+}
+/* /song */
+
+.play {
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+
+.play-up {
+    width: 60%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.2em;
+}
+.play-down {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.time-center {
+    width: 70%;
+    height: 15%;
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+.time-center-bar {
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background: #adadad;
+    border-radius: 15px;
+    justify-content: end;
+}
+
+.ball {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+}
+
+.time-left, .time-right {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: white;
+}
+
+
+.volume {
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.fa-list, .fa-tv, .fa-volume-up {
+    color: white;
+    font-size: 0.8em;
+}
+
+.time-center-left {
+    width: 40%;
+    height: 10%;
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+.time-center-bar-left {
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background: #adadad;
+    border-radius: 15px;
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
