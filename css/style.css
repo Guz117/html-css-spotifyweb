@@ -10,32 +10,244 @@ html {
 
 }
 
-.flex {
-    display: flex;
-}
-
-main {
-    width: 100%;
-}
-
-.clearfix {
-    content: '';
-    display: table;
-    clear: both;
-    width: 100%;
-    overflow: auto;
-    z-index: 99999;
-}
-
 li {
     list-style: none;
 }
 
-/* nav laterale */
+.flex {
+    display: flex;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 90px);
+    background: chartreuse;
+    overflow: hidden;
+}
+
+.main-nav {
+    float: left;
+    width: 230px;
+    height: 100%;
+    min-height: 480px;
+    background: lightblue;
+}
+
+.nav-top {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: darkgoldenrod;
+} 
+
+.nav-bottom {
+    width: 100%;
+    height: 100px;
+    background: darkorange;
+}
+
+.spotify-img {
+    width: 100%;
+}
+
+.logo-spotify-display {
+    width: 75%;
+    padding: 0.5em;
+}
+
+.logo-spotify-none {
+    display: none;
+}
+
+.menu {
+    align-items: center;
+    color: #a3a3a3;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.img-menu{
+    padding-right: 0.5em;
+    width: 15%;
+    fill: #a3a3a3;
+}
+
+.img-menu-none {
+    display: none;
+}
+
+.menu:hover{
+    color: white;
+    border-left: 1px solid #adff2f;
+}
+
+.playlist {
+    height: 400px;
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: white;
+    padding-left: 1em;
+    overflow: auto;
+}
+
+.ul-playlist {
+    margin-top: 1em;
+}
+
+.ul-playlist li {
+    color: #a3a3a3;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+.plus {
+    align-items: center;
+}
+
+.fa-plus-square {
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.main {
+    float: left;
+    width: calc(100% - 230px);
+    height: 100%;
+    padding-top: calc(90px - 2em);
+    padding-bottom: 2em;
+    background: crimson;
+    overflow: auto;
+}
+
+.upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 230px);
+    height: 90px;
+    background-color: #080b12;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.upgrade button {
+    margin-right: 1em;
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    background: #080b12;
+    border: 1px solid white;
+    color: white;
+}
+
+.download {
+    align-items: center;
+    color: #a3a3a3;
+    padding: 0.5em 1em;
+    margin: 0 0.7em;
+    font-size: 0.8em;
+    font-weight: 600;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.download svg {
+    padding-right: 0.5em;
+    width: 15%;
+    fill: #a3a3a3;
+}
+
+.john {
+    align-items: center;
+    color: #a3a3a3;
+    padding: 0.5em 1em;
+    margin: 0 0.7em;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.john svg {
+    padding-right: 0.5em;
+    width: 15%;
+    fill: white;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        width: 50px;
+    }
+    .main {
+        width: calc(100% - 50px);
+    }
+    .upgrade {
+        width: calc(100% - 50px);
+    }
+    .logo-spotify-display {
+        display: none;
+    }
+    .logo-spotify-none {
+        display: block;
+    }
+    .img-menu {
+        display: none;
+    }
+    .img-menu-none {
+        display: block;
+        width: 80%;
+    }
+
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav laterale 
 .nav-left {
     float: left;
     width: 200px;
-    height: calc(100vh - 70px);
+    /* height: calc(100vh - 70px); 
     background-color: #000000;
 }
 
@@ -69,6 +281,7 @@ li {
 }
 
 .playlist {
+    height: 400px;
     margin-top: 1em;
     font-size: 0.8em;
     color: white;
@@ -96,8 +309,10 @@ li {
 }
 
 .instal {
-   flex-direction: column;
-   align-content: flex-end;
+    margin-top: 200px;
+    z-index: 2;
+    flex-direction: column;
+    align-content: flex-end;
 }
 
 .download {
@@ -134,7 +349,7 @@ li {
 
 /* /nav laterale */
 
-/* header */
+/* header 
 .header {
     float: left;
     height: 60px;
@@ -160,23 +375,7 @@ li {
 }
 /* header */
 
-.container {
-    overflow: auto;
-}
 
 
-.albums {
-    float: left;
-    /* width: calc(100% - 200px);*/
-    height: calc(100vh - 70px);
-    background: rgba(100, 148, 237, 0.185);
 
-}
 
-.nav-footer {
-    position: fixed;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-    background-color: yellowgreen;
-}
