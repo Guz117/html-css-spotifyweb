@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400;1,500&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
@@ -40,13 +40,13 @@
                         <span>PLAYLIST</span> 
                         <div class="plus flex"><i class="fas fa-plus-square"></i><span>Crea Playlist</span></div>
                         <ul class="ul-playlist">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
+                            <li class="name-playlist">Nome Playlist</li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <ul class="album-menu flex">
                         <li class="navigation flex">
                             <a href="#">IN EVIDENZA</a> 
-                            <div class="line"></div>
+                            <div id="evidenva-line" class="line"></div>
                         </li>
                         <li class="navigation flex">
                             <a href="#">PODCAST</a> 
@@ -124,6 +124,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/stranger.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">Stranger Things Vol. 1 (a NetflixOriginal Series Soundtrack)</span>
@@ -133,6 +134,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/aquietplace.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">A quiet place</span>
@@ -142,6 +144,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/split.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">Split</span>
@@ -151,6 +154,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/cure.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">A cure of wellnes</span>
@@ -160,6 +164,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/sinister.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down">
                                 <span class="title-song">Sinister</span>
@@ -178,6 +183,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/radar.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">Release Radar</span>
@@ -186,6 +192,7 @@
                         <div class="music-box">
                             <div class="music-box-up">
                                 <img src="img/mixdaily.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">Daily Mix 1</span>
@@ -203,6 +210,7 @@
                         <div class="music-box">
                             <div class="music-box-up sphere">
                                 <img src="img/youg.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">Luna del Rey</span>
@@ -211,6 +219,7 @@
                         <div class="music-box">
                             <div class="music-box-up sphere">
                                 <img src="img/einaudi.jpeg" alt="">
+                                <i class="far fa-play-circle cicle-up"></i>
                             </div>
                             <div class="music-box-down flex">
                                 <span class="title-song">Ludovico Einaudi</span>
