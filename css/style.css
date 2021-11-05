@@ -33,7 +33,7 @@ li {
 main {
     width: 100%;
     height: calc(100% - 90px);
-    background: cornflowerblue;
+    background: #141922;
     overflow: hidden;
 }
 
@@ -268,7 +268,6 @@ main {
 .line {
     height: 2px;
     width: 60%;
-    background: chartreuse;
 }
 
 
@@ -282,7 +281,6 @@ main {
 
 .music {
     width: 98%;
-    background: #adff2f;
     margin: 0 auto;
     margin-top: 2em;
 }
@@ -296,19 +294,17 @@ main {
 
 .recently-album {
     width: 100%;
-    background: coral;
     padding-top: 1em;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
+
 .music-box {
-    width: 200px;
-    background: slateblue;
+    width: calc(100% / 6 - 10px);
 }
 
 .music-box-up {
-    width: 100%;
-    background: thistle;
     position: relative;
 }
 
@@ -319,10 +315,10 @@ main {
 
 .music-box-down {
     width: 100%;
-    background:saddlebrown;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1em;
 }
 
 .title-song {
@@ -363,77 +359,7 @@ main {
     opacity: 0.5;
 }
 
-@media screen and (max-width: 1100px) and (min-width: 701px) {
-    .recently-album {
-        flex-wrap: wrap;
-    }
-}
 
-@media screen and (max-width: 700px) {
-    .album-menu {
-        flex-wrap: wrap;
-    }
-    .recently-album {
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .main-nav {
-        width: 50px;
-    }
-    .main {
-        width: calc(100% - 50px);
-    }
-    .upgrade {
-        width: calc(100% - 50px);
-    }
-    .logo-spotify-display {
-        display: none;
-    }
-    .logo-spotify-none {
-        display: block;
-        width: 80%;
-        padding: 0.5em;
-    }
-    .img-menu {
-        display: none;
-    }
-    .img-menu-none {
-        display: block;
-        fill: white;
-        width: 80%;
-    }
-    .playlist {
-        display: none;
-    }
-    .img-menu-bottom {
-        display: none;
-    }
-    .img-menu-text {
-        display: none;
-    }
-    .text-menu-bottom {
-        display: none;
-    }
-    .img-menu-bottom-none {
-        display: block;
-        fill: white;
-        width: 20px;
-    }
-    .download {
-        margin: 0;
-    }
-    .john {
-        margin: 0;
-    }
-    .john .img-menu-bottom-none {
-        fill: white;
-        background: #a3a3a3;
-        border-radius: 20px;
-    }
-
-}
 
 
 
@@ -627,7 +553,81 @@ footer {
 
 
 
+@media screen and (max-width: 1100px) {
+    .music-box {
+    width: calc(100% / 4 - 10px);
+}
 
+@media screen and (max-width: 700px) {
+    .album-menu {
+        flex-wrap: wrap;
+    }
+    .recently-album {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        width: 50px;
+    }
+    .main {
+        width: calc(100% - 50px);
+    }
+    .upgrade {
+        width: calc(100% - 50px);
+    }
+    .logo-spotify-display {
+        display: none;
+    }
+    .logo-spotify-none {
+        display: block;
+        width: 80%;
+        padding: 0.5em;
+    }
+    .img-menu {
+        display: none;
+    }
+    .img-menu-none {
+        display: block;
+        fill: white;
+        width: 80%;
+    }
+    .playlist {
+        display: none;
+    }
+    .img-menu-bottom {
+        display: none;
+    }
+    .img-menu-text {
+        display: none;
+    }
+    .text-menu-bottom {
+        display: none;
+    }
+    .img-menu-bottom-none {
+        display: block;
+        fill: white;
+        width: 20px;
+    }
+    .download {
+        margin: 0;
+    }
+    .john {
+        margin: 0;
+    }
+    .john .img-menu-bottom-none {
+        fill: white;
+        background: #a3a3a3;
+        border-radius: 20px;
+    }
+    .recently-album {
+        flex-wrap: wrap;
+    }
+    .music-box {
+        width: calc(100% / 2 - 10px);
+
+}
 
 
 
