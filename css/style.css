@@ -99,7 +99,6 @@ main {
 
 .menu:hover{
     color: white;
-    border-left: 2px solid #adff2f;
 }
 
 .menu:hover .img-menu {
@@ -216,7 +215,7 @@ main {
     right: 0;
     width: calc(100% - 230px);
     height: 90px;
-    background-color: #080b12;
+    background-color: #080b12d2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -234,7 +233,7 @@ main {
     transition: font-size;
 }
 
-.upgrade:active button{
+.upgrade:hover button{
     font-size: 1em;
 }
 /* main upgrade */
@@ -267,16 +266,12 @@ main {
 
 
 .line {
-    height: 1px;
+    height: 2px;
     width: 60%;
     background: chartreuse;
-    display: none;
 }
 
 
-.navigation:hover .line {
-    display: block;
-}
 
 .navigation:hover a{
     color: white;
@@ -309,7 +304,6 @@ main {
 .music-box {
     width: 200px;
     background: slateblue;
-    
 }
 
 .music-box-up {
