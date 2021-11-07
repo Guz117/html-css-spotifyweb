@@ -37,6 +37,11 @@ main {
     overflow: hidden;
 }
 
+a{
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
 
 /* main-nav */
 .main-nav {
@@ -97,7 +102,7 @@ main {
     display: none;
 }
 
-.menu:hover{
+.menu:hover a{
     color: white;
 }
 
@@ -111,6 +116,8 @@ main {
 
 .plus {
     color: #a3a3a3;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .plus:hover {
@@ -130,7 +137,6 @@ main {
     padding-left: 1em;
 }
 
-
 .ul-playlist {
     margin-top: 1em;
     overflow-y: auto;
@@ -142,7 +148,7 @@ main {
     font-weight: 600;
 }
 
-.name-playlist:hover {
+.name-playlist:hover a{
     color: white;
 }
 
@@ -155,16 +161,6 @@ main {
     font-size: 2em;
     margin-right: 0.5em;
 }
-
-.main {
-    float: left;
-    width: calc(100% - 230px);
-    height: 100%;
-    padding-top: calc(90px + 0.7em);
-    padding-bottom: 2em;
-    overflow: auto;
-}
-
 
 .download {
     align-items: center;
@@ -192,6 +188,7 @@ main {
     margin: 0 0.7em;
     font-size: 0.8em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .john .img-menu-bottom {
@@ -206,6 +203,18 @@ main {
 
 .text-menu-bottom {
     margin-left: 0.5em;
+}
+/* /main-nav */
+
+
+/* main */
+.main {
+    float: left;
+    width: calc(100% - 230px);
+    height: 100%;
+    padding-top: calc(90px + 0.7em);
+    padding-bottom: 2em;
+    overflow: auto;
 }
 
 /* main upgrade */
@@ -231,6 +240,7 @@ main {
     border: 1px solid white;
     color: white;
     transition: font-size;
+    cursor: pointer;
 }
 
 .upgrade:hover button{
@@ -238,11 +248,6 @@ main {
 }
 /* main upgrade */
 
-/* /main-nav */
-
-
-
-/* albums */
 
 /* album menu */
 .album-menu {
@@ -254,16 +259,10 @@ main {
     font-weight: 600;
 }
 
-.navigation a{
-    color: #a3a3a3;
-    text-decoration: none;
-}
-
 .navigation {
     flex-direction: column;
     align-items: center;
 }
-
 
 .line {
     height: 2px;
@@ -271,15 +270,12 @@ main {
     background-color: #adff2f;
 }
 
-
-
 .navigation:hover a{
     color: white;
 }
-
-
 /* /album menu */
 
+/* select music */
 .music {
     width: 98%;
     margin: 0 auto;
@@ -300,9 +296,9 @@ main {
     flex-wrap: wrap;
 }
 
-
 .music-box {
     width: calc(100% / 6 - 10px);
+    cursor: pointer;
 }
 
 .music-box-up {
@@ -310,8 +306,7 @@ main {
 }
 
 .music-box-up img {
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .music-box-down {
@@ -348,7 +343,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em;
+    font-size: 5em;
     display: none;
 }
 
@@ -359,6 +354,8 @@ main {
 .music-box:hover .music-box-up img {
     opacity: 0.5;
 }
+/* /select music */
+/* /main */
 
 /* footer */
 footer {
@@ -375,8 +372,6 @@ footer {
     margin-left: 1em;
     justify-content: space-between;
 }
-
-
 
 .img-sinister {
     width: 60px;
@@ -405,6 +400,7 @@ footer {
     font-size: 0.6em;
     color: #a3a3a3;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .brano:hover {
@@ -416,6 +412,7 @@ footer {
     color: #a3a3a3;
     font-size: 1em;
     margin-left: 2em;
+    cursor: pointer;
 }
 
 .heart:hover {
@@ -424,6 +421,7 @@ footer {
 
 .folder {
     margin-left: 2em;
+    cursor: pointer;
 }
 
 .folder:hover {
@@ -431,6 +429,7 @@ footer {
 }
 /* /song */
 
+/* play */
 .play {
     flex-direction: column;
     width: 40%;
@@ -459,6 +458,7 @@ footer {
     height: 15%;
     background-color: #545454;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -493,18 +493,21 @@ footer {
     color: white;
 }
 
-.time-center-left:hover .time-center-bar-left {
+.time-center-right:hover .time-center-bar-right {
     background: chartreuse;
 }
 
-.time-center-left:hover .ball-right {
+.time-center-right:hover .ball-right {
     display: block;
 }
 
 .play-up .circle-down:hover {
     font-size: 1.5em;
+    cursor: pointer;
 }
+/* /play */
 
+/* volume */
 .volume {
     align-items: center;
     width: 20%;
@@ -519,25 +522,28 @@ footer {
 
 .fa-list:hover {
     color: white;
+    cursor: pointer;
 }
 
 .fa-tv:hover {
     color: white;
+    cursor: pointer;
 }
-
 
 .fa-volume-up:hover {
     color: white;
+    cursor: pointer;
 }
 
-.time-center-left {
+.time-center-right {
     width: 40%;
     height: 10%;
     background-color: #545454;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.time-center-bar-left {
+.time-center-bar-right {
     align-items: center;
     width: 30%;
     height: 100%;
@@ -545,10 +551,11 @@ footer {
     border-radius: 15px;
     justify-content: end;
 }
+/* /volume */
+/* /footer */
 
 
-
-
+/* media query */
 @media screen and (max-width: 1100px) {
     .music-box {
     width: calc(100% / 4 - 10px);
@@ -622,9 +629,8 @@ footer {
     }
     .music-box {
         width: calc(100% / 2 - 10px);
-
 }
-
+/* /media query */
 
 
 
